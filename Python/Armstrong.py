@@ -1,6 +1,7 @@
 # Python program to check if the number is an Armstrong number or not
 
 # take input from the user
+'''
 num = int(input("Enter a number: "))
 
 # initialize sum
@@ -18,3 +19,11 @@ if num == sum:
    print(num,"is an Armstrong number")
 else:
    print(num,"is not an Armstrong number")
+   '''
+   # one liner:
+   num = input('Enter the number: ')
+
+   if sum([int(i) ** len(num) for i in num]) == int(num):
+       print(num,'is a Armstrong number')
+   else:
+       print(num,'is NOT Armstrong number')
